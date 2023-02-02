@@ -5,21 +5,175 @@
 
 \addbibresource{references.bib}
 
-\author{Author Name}
-\email{username@gatech.edu}
-\title{Joyner Document Format v2.2:\\For Use in CS6460, CS6750, and CS7637}
+\author{Qiyun Zhao}
+\email{qzhao97@gatech.edu}
+\title{AI, Ethics, Society\\Homework Project \#2}
 
 \begin{document}
 %\lsstyle
-
 \maketitle
 
-\begin{abstract}
-	Welcome to Joyner Document Format (JDF) v2.2! JDF is primarily intended to standardize page lengths while ensuring readability. Note that you are required to use JDF for all written assignments, but we will not perform explicit formatting checks. So, while improper formatting may be subject to penalties, you should not worry too much about whether your submission conforms to every minute detail; the most important elements are margins, font, font sizes, and line spacing. Just make a copy of one of the provided templates and replace its contents with your own, using the built-in paragraph styles.\footnote{Here are instructions for \href{https://support.office.com/en-us/article/Video-Using-Styles-in-Word-9db4c0f4-2754-4294-9758-c14a0abd8cfa}{Microsoft Word}, \href{https://support.apple.com/guide/pages/intro-to-paragraph-styles-tanaa39b0aa3/mac}{Apple Pages}, and \href{https://www.bazroberts.com/2016/04/19/google-docs-paragraph-styles-headings/}{Google Docs}.} If you do so, you do not need to verify that the style was followed.
-\end{abstract}
+\section{Explore the data}
+\subsection{Selected Dataset}
+hospital-discharge-2017.csv \newline
+New York Hospital Inpatient Discharge Information in 2017: https://health.data.ny.gov/dataset/Hospital-Inpatient-Discharges-SPARCS-De-Identified/22g3- z7e7
+\subsection{Number of observations: 1048575}
+\subsection{Number of variables in the dataset: 18}
+\subsection{Regulated Domain in Law: Yes}
+Hospital is a public accommodation. (Civil Rights Act of 1964)
+\subsection{Number of Protected Class Variables}
+There are four protected class variables.
+\begin{jdftable}
+\captionof{table}{variables associated with a protected class}\label{table:Example}
+\small % Reduce font size
+\begin{tabular}{@{} L{0.15\linewidth} c L{0.52\linewidth}}
+\textbf{Name} & \textbf{Protected Class} & \textbf{LAW} \\
+	\toprule[0.5pt]
+	Age Group & Age & Age Discrimination in Employment Act of 1967\\
+	\midrule
+	Gender & Sex & Equal Pay Act of 1963; Civil Rights Act of 1964, 1991 \\
+	\midrule
+	Race &Race & Civil Rights Act of 1964, 1991\\
+	\midrule
+	Ethnicity & Religion &Civil Rights Act of 1964, 1991\\
+\end{tabular}
+\end{jdftable}
 
-\section{Typography}
-All text in JDF should be set in the Palatino typeface. It is available practically everywhere as a system font: Google Docs offers a version called \emph{Palatino Linotype}. It comes in regular and bold weights with matching italics.
+\break
+\section{relationships between dependent and independent variables}
+\subsection{Output for Length of Stay-Age Group Combination}
+\ 
+\begin{jdftable}
+\captionof{table}{Frequesncy of APR Severity of Illness Code associated with Age}\label{table:Example}
+\small % Reduce font size
+\begin{tabular}{@{} l c c c c c}
+\textbf{Independent Variable} & \textbf{Dependent Variable-Illness Code} & & & & \\
+	\toprule[0.5pt]
+	Age Group & 0 & 1 & 2 & 3 & 4\\
+	\midrule
+	0 to 17 & 78 & 99272 & 36546 & 14307 & 2987 \\
+ \midrule
+ 18 to 29 & 5 & 49274 & 42544 & 10391 & 1837 \\
+ \midrule
+ 30 to 49 & 5 & 81573 & 84202 & 28537 & 5463 \\
+ \midrule
+ 50 to 69 & 0 & 71624 & 124930 & 78954 & 18969 \\
+ \midrule
+ 70 or Older & 0 & 40790 & 117901 & 109562 & 28824 \\
+\end{tabular}
+\end{jdftable}
+
+\subsection{Output for Length of Stay-Gender Combination}
+\subsection{Output for Length of Stay-Race Combination}
+\subsection{Output for Length of Stay-Ethnicity Combination}
+
+\subsection{Output for APR Severity of Illness Code-Age Group Combination}
+\ 
+\begin{jdftable}
+\captionof{table}{Frequesncy of APR Severity of Illness Code associated with Age}\label{table:Example}
+\small % Reduce font size
+\begin{tabular}{@{} l c c c c c}
+\textbf{Independent Variable} & \textbf{Dependent Variable-Illness Code} & & & & \\
+	\toprule[0.5pt]
+	Age Group & 0 & 1 & 2 & 3 & 4\\
+	\midrule
+	0 to 17 & 78 & 99272 & 36546 & 14307 & 2987 \\
+ \midrule
+ 18 to 29 & 5 & 49274 & 42544 & 10391 & 1837 \\
+ \midrule
+ 30 to 49 & 5 & 81573 & 84202 & 28537 & 5463 \\
+ \midrule
+ 50 to 69 & 0 & 71624 & 124930 & 78954 & 18969 \\
+ \midrule
+ 70 or Older & 0 & 40790 & 117901 & 109562 & 28824 \\
+\end{tabular}
+\end{jdftable}
+
+\begin{jdffigure}
+\includegraphics[height=13cm]{Figures/code-age.jpg} \\
+\captionof{figure}{APR Severity of Illness Code associated with Age}\label{fig:code-age}%
+\end{jdffigure}
+\subsection{Output for APR Severity of Illness Code-Gender Combination}
+\ 
+\begin{jdftable}
+\captionof{table}{Frequesncy of APR Severity of Illness Code associated with Gender}\label{table:Example}
+\small % Reduce font size
+\begin{tabular}{@{} l c c c c c}
+\textbf{Independent Variable} & \textbf{Dependent Variable-Illness Code} & & & & \\
+	\toprule[0.5pt]
+	Gender & 0 & 1 & 2 & 3 & 4 \\
+\midrule
+F & 47 & 204335 & 225867 & 124164 & 27413 \\
+\midrule
+M & 41 & 138187 & 180251 & 117584 & 30666 \\
+\midrule
+U & 0 & 11 & 5 & 3 & 1 \\
+\end{tabular}
+\end{jdftable}
+
+\begin{jdffigure}
+\includegraphics[height=13cm]{Figures/code-gender.jpg} \\
+\captionof{figure}{APR Severity of Illness Code associated with Gender}\label{fig:code-gender}%
+\end{jdffigure}
+
+
+
+\subsection{Output for APR Severity of Illness Code-Race Combination}
+\ 
+\begin{jdftable}
+\captionof{table}{Frequesncy of APR Severity of Illness Code associated with Race}\label{table:Example}
+\small % Reduce font size
+\begin{tabular}{@{} l c c c c c}
+\textbf{Independent Variable} & \textbf{Dependent Variable-Illness Code} & & & & \\
+	\toprule[0.5pt]
+Race & 0 & 1 & 2 & 3 & 4 \\
+\midrule
+Black/African American & 25 & 54922 & 80158 & 46360 & 10163 \\
+\midrule
+Multi-racial & 3 & 3119 & 3757 & 2646 & 666 \\
+\midrule
+Other Race & 39 & 101980 & 97947 & 52135 & 12926 \\
+\midrule
+White & 21 & 182512 & 224261 & 140610 & 34325 \\
+\end{tabular}
+\end{jdftable}
+
+\begin{jdffigure}
+\includegraphics[height=13cm]{Figures/code-race.jpg} \\
+\captionof{figure}{APR Severity of Illness Code associated with Race}\label{fig:code-race}%
+\end{jdffigure}
+
+\subsection{Output for APR Severity of Illness Code-Ethnicity Combination}
+\ 
+\begin{jdftable}
+\captionof{table}{Frequesncy of APR Severity of Illness Code associated with Ethnicity}\label{table:Example}
+\small % Reduce font size
+\begin{tabular}{@{} l c c c c c}
+\textbf{Independent Variable} & \textbf{Dependent Variable-Illness Code} & & & & \\
+	\toprule[0.5pt]
+Ethnicity & 0 & 1 & 2 & 3 & 4 \\
+\midrule
+Multi-ethnic & 0 & 1397 & 1324 & 938 & 206 \\
+\midrule
+Not Span/Hispanic & 54 & 266442 & 329128 & 202722 & 49309 \\
+\midrule
+Spanish/Hispanic & 18 & 49345 & 52072 & 25163 & 5106 \\
+\midrule
+Unknown & 16 & 25349 & 23599 & 12928 & 3459 \\
+\end{tabular}
+\end{jdftable}
+
+\begin{jdffigure}
+\includegraphics[height=13cm]{Figures/code-Ethnicity.jpg} \\
+\captionof{figure}{APR Severity of Illness Code associated with Ethnicity}\label{fig:code-Ethnicity}%
+\end{jdffigure}
+
+
+
+\section{Manipulate with data}
+\subsection{Fair Hypothesis}
+\subsection{Bias Hypothesis}
+
 
 \begin{jdffigure}
 \includegraphics[height=0.77cm]{Figures/Handgloves.png} \\
