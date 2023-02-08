@@ -35,7 +35,7 @@ There are four protected class variables.
 	\midrule
 	Race &Race & Civil Rights Act of 1964, 1991\\
 	\midrule
-	Ethnicity & Religion &Civil Rights Act of 1964, 1991\\
+	Ethnicity & National origin &Civil Rights Act of 1964, 1991\\
 \end{tabular}
 \end{jdftable}
 
@@ -44,29 +44,93 @@ There are four protected class variables.
 \subsection{Output for Length of Stay-Age Group Combination}
 \ 
 \begin{jdftable}
-\captionof{table}{Frequesncy of APR Severity of Illness Code associated with Age}\label{table:Example}
+\captionof{table}{Frequesncy of Length of Stay associated with Age}\label{table:Example}
 \small % Reduce font size
-\begin{tabular}{@{} l c c c c c}
-\textbf{Independent Variable} & \textbf{Dependent Variable-Illness Code} & & & & \\
+\begin{tabular}{@{} l c c c c c c}
+\textbf{Independent Variable} & \textbf{Dependent Variable-Length of Stay} &\textbf{days} & & & \\
 	\toprule[0.5pt]
-	Age Group & 0 & 1 & 2 & 3 & 4\\
-	\midrule
-	0 to 17 & 78 & 99272 & 36546 & 14307 & 2987 \\
- \midrule
- 18 to 29 & 5 & 49274 & 42544 & 10391 & 1837 \\
- \midrule
- 30 to 49 & 5 & 81573 & 84202 & 28537 & 5463 \\
- \midrule
- 50 to 69 & 0 & 71624 & 124930 & 78954 & 18969 \\
- \midrule
- 70 or Older & 0 & 40790 & 117901 & 109562 & 28824 \\
+	Age Group & (0, 2] & (2, 5] & (5, 10] & (10, 20] & (20, 50] & (50, 120] \\
+\midrule
+0 to 17 & 89723 & 45734 & 9093 & 4672 & 2809 & 1159 \\
+\midrule
+18 to 29 & 45997 & 39526 & 10217 & 5353 & 2518 & 440 \\
+\midrule
+30 to 49 & 83813 & 75010 & 23069 & 11628 & 5365 & 895 \\
+\midrule
+50 to 69 & 103674 & 98963 & 52460 & 26431 & 11054 & 1895 \\
+\midrule
+70 or Older & 75863 & 109588 & 69977 & 31019 & 9478 & 1152 \\
 \end{tabular}
 \end{jdftable}
+\begin{jdffigure}
+\includegraphics[height=13cm]{Figures/length-age.jpg} \\
+\captionof{figure}{Length of Stage associated with Age}\label{fig:length-age}%
+\end{jdffigure}
 
 \subsection{Output for Length of Stay-Gender Combination}
+\ 
+\begin{jdftable}
+\captionof{table}{Frequesncy of Length of Stay associated with Gender}\label{table:Example}
+\small % Reduce font size
+\begin{tabular}{@{} l c c c c c c}
+\textbf{Independent Variable} & \textbf{Dependent Variable-Length of Stay} &\textbf{days} & & & \\
+	\toprule[0.5pt]
+Gender & (0, 2] & (2, 5] & (5, 10] & (10, 20] & (20, 50] & (50, 120] \\ \midrule
+F & 224687 & 216534 & 85795 & 38214 & 14196 & 2400 \\ \midrule
+M & 174371 & 152283 & 79018 & 40889 & 17028 & 3140 \\ \midrule
+U & 12 & 4 & 3 & 0 & 0 & 1 \\
+\end{tabular}
+\end{jdftable}
+\begin{jdffigure}
+\includegraphics[height=13cm]{Figures/length-gender.jpg} \\
+\captionof{figure}{Length of Stage associated with Gender}\label{fig:length-gender}%
+\end{jdffigure}
 \subsection{Output for Length of Stay-Race Combination}
+\ 
+\begin{jdftable}
+\captionof{table}{Frequesncy of Length of Stay associated with Race}\label{table:Example}
+\small % Reduce font size
+\begin{tabular}{@{} l c c c c c c}
+\textbf{Independent Variable} & \textbf{Dependent Variable-Length of Stay} &\textbf{days} & & & \\
+	\toprule[0.5pt]
+Race & (0, 2] & (2, 5] & (5, 10] & (10, 20] & (20, 50] & (50, 120] \\ 
+\midrule
+Black/African American & 67009 & 66274 & 31901 & 17515 & 7451 & 1478 \\
+\midrule
+Multi-racial & 3917 & 3644 & 1551 & 711 & 295 & 73 \\
+\midrule
+Other Race & 110102 & 92612 & 35346 & 17708 & 7567 & 1692 \\
+\midrule
+White & 218042 & 206291 & 96018 & 43169 & 15911 & 2298 \\
+\end{tabular}
+\end{jdftable}
+\begin{jdffigure}
+\includegraphics[height=13cm]{Figures/length-race.jpg} \\
+\captionof{figure}{Length of Stage associated with Race}\label{fig:length-race}%
+\end{jdffigure}
 \subsection{Output for Length of Stay-Ethnicity Combination}
-
+\ 
+\begin{jdftable}
+\captionof{table}{Frequesncy of Length of Stay associated with Ethnicity}\label{table:Example}
+\small % Reduce font size
+\begin{tabular}{@{} l c c c c c c}
+\textbf{Independent Variable} & \textbf{Dependent Variable-Length of Stay} &\textbf{days} & & & \\
+	\toprule[0.5pt]
+Ethnicity & (0, 2] & (2, 5] & (5, 10] & (10, 20] & (20, 50] & (50, 120] \\
+\midrule
+Multi-ethnic & 1606 & 1398 & 485 & 242 & 104 & 30 \\
+\midrule
+Not Span/Hispanic & 316125 & 297774 & 138096 & 65691 & 25612 & 4357 \\
+\midrule
+Spanish/Hispanic & 54884 & 47488 & 17154 & 8220 & 3303 & 655 \\
+\midrule
+Unknown & 26455 & 22161 & 9081 & 4950 & 2205 & 499 \\
+\end{tabular}
+\end{jdftable}
+\begin{jdffigure}
+\includegraphics[height=13cm]{Figures/length-Ethnicity.jpg} \\
+\captionof{figure}{Length of Stage associated with Ethnicity}\label{fig:length-Ethnicity}%
+\end{jdffigure}
 \subsection{Output for APR Severity of Illness Code-Age Group Combination}
 \ 
 \begin{jdftable}
@@ -115,8 +179,6 @@ U & 0 & 11 & 5 & 3 & 1 \\
 \includegraphics[height=13cm]{Figures/code-gender.jpg} \\
 \captionof{figure}{APR Severity of Illness Code associated with Gender}\label{fig:code-gender}%
 \end{jdffigure}
-
-
 
 \subsection{Output for APR Severity of Illness Code-Race Combination}
 \ 
@@ -171,125 +233,308 @@ Unknown & 16 & 25349 & 23599 & 12928 & 3459 \\
 
 
 \section{Manipulate with data}
+
 \subsection{Fair Hypothesis}
+As seen from this graph, APR Severity of Illness Code is not dependent on the Age Group. [Manipulations: Scale the y-axis to $10^7$].
+\begin{jdffigure}
+\includegraphics[height=13cm]{Figures/code-age-fair.jpg} \\
+\captionof{figure}{Fair Hypothesis for APR Severity of Illness Code with Age Group}\label{fig:code-age-fair}%
+\end{jdffigure}
 \subsection{Bias Hypothesis}
-
-
+As seen from this graph,  APR Severity of Illness Codes are significantly dependent on the Age Group. [This hypothesis was easily supported with the data so didn’t require much in manipulations: Used bar graph; Reduced Scale; Reworded labels].
 \begin{jdffigure}
-\includegraphics[height=0.77cm]{Figures/Handgloves.png} \\
-{\huge Handgloves}%
-\captionof{figure}{Palatino. Make sure the live text (bottom) uses the same font as the image (top).}\label{fig:Palatino}%
-\end{jdffigure}
-% For example in Figure \ref{fig:Palatino} on page \pageref{fig:Palatino}...
-
-\subsection{Body text}
-Body text is set in the regular weight at 11 points with custom line spacing of 1.26, and 8.5 points of spacing added after each paragraph. It should be justified and paragraphs should not be indented. These styles can be automatically applied using the \emph{Normal} paragraph style.
-
-\textbf{Bold} and \textit{italics} should be used for emphasis. Hyperlinks may be inserted in the text, as well as {\tt in-line code}, superscripts\textsuperscript{ like this}, and subscripts\textsubscript{ like this}.
-
-\subsection{Title \& subtitle}
-The paper title should be set in the regular weight at 17 points with 22 points of line spacing, centered at the top of the first page. The title may span up to three lines. For typical assignments, the document title may be as simple as "Assignment 1" More specialized assignments may warrant more unique paper names, like "A Proposal to Create a New Document Format."
-
-The author’s name and email should come next unless you want to or were asked to submit anonymously, in which case this can be omitted. They should be set in the same size and weight as body text, centered. These styles can be applied using the \emph{Title} and \emph{Subtitle} paragraph styles.
-
-\subsection{Abstract}
-If your paper requires an abstract, it should be placed at the top of the first page underneath the title block, preceded by the word \emph{Abstract} in bold italic. An extra 0.5" should be added to both sides. Not all papers require abstracts; only those that would benefit from a high-level summary of the project or its background.
-
-\subsection{Headings}
-Headings should all be set in the same size as body text (11 pt) in bold. With the exception of \emph{Heading 1}, they should all have 8.5 pt of space before and after. They should be hierarchically numbered: Word, Pages, and \LaTeX\ will do this automatically when you use the appropriate paragraph styles, but Google Docs users will need to number their headings manually. Headings should not span more than one line.
-
-\subsubsection{Heading 1}
-\emph{Heading 1} should be set in all caps. It should have 11 points of space added before and 8.5 points of space added after
-
-\subsubsection{Headings 2\,–\,4}
-Besides \emph{Heading 1}, which is set in caps, headings should always use sentence case (i.e., first word capitalized) rather than title case; after all, they are not titles. \emph{Heading 2} should be set in bold roman (upright), and \emph{Heading 3} should be set in bold italics. The use of headings beyond \emph{Heading 3} is discouraged.
-
-\subsubsubsection{Heading 4}
-\emph{Heading 4} is provided as a run-in sidehead. Like \emph{Heading 3}, it is set in bold italics, but it should be followed by an em dash and flow right into the text, as seen at the beginning of the current paragraph. It should be used more as a list style than a heading style, e.g. to set off a list of principles in a heuristic evaluation.
-
-\subsection{Page layout}
-JDF uses the US Letter paper size (8.5" x 11"). It has a top margin of 1", and bottom and side margins of 1.5". This yields a text block of 5.5" x 8.5", which is exactly \(\frac{1}{2}\) the size of the page, divided lengthwise.
-
-The page number should be included in the bottom margin, 1" from the bottom of the page. No other elements should be placed in the margins.
-
-\section{Presentational elements}
-You are encouraged to use presentational elements liberally, as long as they add to the clarity of your submissions. They often require less space and fewer accompanying words to explain a given concept, and do a far better job of it.
-
-\subsection{Figures}
-Figures should always be centered on the page, although they may also take up the entire width and height of the text block. Figures should always be referenced in the text, and they should include a descriptive caption. Figures may also be equations, diagrams, or other kinds of content.
-
-If your figure includes a white background (e.g. an interface design or graph), it may aid legibility to add a \(\frac{1}{4}\)-point black border.
-
-\begin{jdffigure}
-\includegraphics[height=6cm]{Figures/flowchart.png}%
-\captionof{figure}{Make sure your flowcharts are more useful than this one. Source: \href{https://xkcd.com/1195/}{XKCD}.}\label{fig:flowchart}%
+\includegraphics[height=13cm]{Figures/code-age.jpg} \\
+\captionof{figure}{Bias Hypothesis for APR Severity of Illness Code with Age Group}\label{fig:code-age-fair}%
 \end{jdffigure}
 
-Figure captions should be placed beneath the corresponding figure, indented 1" on the left and right sides. The label for the figure, e.g. "Figure 1," should be set in bold italics followed by an em dash, and the entire caption should be 8.5 points with 14 points of line spacing. Again, Word and LaTeX will number these automatically using the \emph{Figure Caption} paragraph style, but Docs users will need to number these manually. If need be, you may have one figure caption corresponding to multiple consecutive figures and use either locational descriptors (e.g. "top left," "middle") or labels (e.g. "A", "B") to map parts of the caption to parts of the figure. Make sure that caption falls on the same page as the corresponding figure or table; you may rearrange text to make this work.
-
-In Microsoft Word, you may need to either change the image’s text wrap settings to "Top and Bottom" or change the line spacing of the image to 1.0.
-
-\subsection{Tables}
-You have freedom to format tables in the way that works best for your data. Generally, text should be left-aligned and numbers should be right-aligned or aligned at the decimal – you can do this using a \href{https://practicaltypography.com/tabs-and-tab-stops.html}{custom tab stop}. The default table style (shown below) reduces the text size to be equal to the caption text.
-
-Table captions should be formatted the same way as figure captions, but they should be placed above the table. The popular mnemonic for this is: figures at the foot, tables at the top. Like figures, tables should not exceed the margins and should be centered on the page.
+\section{Comparison of the original dataset and reduced dataset}
+\subsection{Comparison for Length of Stay and Age Group}
+There are small difference in Mean between original data and reduced data. But no difference between median and mode. 
 
 \begin{jdftable}
-\captionof{table}{Mathematical constants. Notice how the approximations align at the decimal.}\label{table:Example}
+\captionof{table}{APR Severity of Illness Code and Age Group}\label{table:Example}
 \small % Reduce font size
-\begin{tabular}{@{} L{0.15\linewidth} c S L{0.52\linewidth}}
-	\textbf{Name} & \textbf{Symbol} & \textbf{Approximation} & \textbf{Description} \\
+\begin{tabular}{@{} l c c c c c}
+\textbf{Age Group} & \textbf{0 to 17} &\textbf{18 to 29} & \textbf{30 to 49} & \textbf{50 to 69} & \textbf{70 or older}\\
 	\toprule[0.5pt]
-	Golden ratio & $\phi$ & 1.618 & Number such that the ratio of " to the number is equal to the ratio of its reciprocal to 1\\
-	\midrule
-	Euler's number & $e$ & 2.71828 & Exponential growth constant\\
-	\midrule
-	Archimedes' constant & $\pi$ & 3.14 & The ratio between circumference and diameter of a circle\\
-	\midrule
-	One hundred & A+ & 100.00 & The grade we hope you’ll all earn in this class\\
+APR Severity of Illness Code Mean           &  1.483341 &  1.661522 &  1.789168 &  2.153723 &     2.425546 \\
+\midrule
+APR Severity of Illness Code Reduced Mean   &  1.483046 &  1.661436 &  1.788435 &  2.153978 &     2.425899 \\
+\midrule
+Mean Difference                             &  0.000295 &  0.000086 &  0.000733 & -0.000255 &    -0.000353 \\
+\midrule
+APR Severity of Illness Code Median         &  1.000000 &  2.000000 &  2.000000 &  2.000000 &     2.000000 \\
+\midrule
+APR Severity of Illness Code Reduced Median &  1.000000 &  2.000000 &  2.000000 &  2.000000 &     2.000000 \\
+\midrule
+Median Difference                           &  0.000000 &  0.000000 &  0.000000 &  0.000000 &     0.000000 \\
+\midrule
+APR Severity of Illness Code Mode           &  1.000000 &  1.000000 &  2.000000 &  2.000000 &     2.000000 \\
+\midrule
+APR Severity of Illness Code Reduced Mode   &  1.000000 &  1.000000 &  2.000000 &  2.000000 &     2.000000 \\
+\midrule
+Mode Difference                             &  0.000000 &  0.000000 &  0.000000 &  0.000000 &     0.000000 \\
 \end{tabular}
 \end{jdftable}
 
-\subsection{Additional elements}
-There are additional elements you may want to include in your paper, such as in-line or block quotes, lists, and more. For other content types not covered here, you have flexibility in determining how it should be used in this format.
 
-\subsubsection{Quotes}
-If you would like to quote an outside source, you may do so with quotation marks followed by a citation. If a quote is fewer than three lines, you may write it in-line. It is acceptable to replace pronouns with their target in brackets for clarity. For example, "Heavy use of peer grading would compromise [the school’s] reputation" \citep{joyner2016}. If a quote exceeds three lines, you should set it as its own paragraph with 0.5" side margins, using the \emph{Blockquote} style.
+\subsection{APR Severity of Illness Code and Age Group}
+There are small difference in Mean between original data and reduced data. But no difference between median and mode. 
+\begin{jdftable}
+\captionof{table}{APR Severity of Illness Code and Gender}\label{table:Example}
+\small % Reduce font size
+\begin{tabular}{@{} llll}
+\textbf{Gender} & \textbf{F} &\textbf{M} & \textbf{U}\\
+	\toprule[0.5pt]
 
-\begin{quotation}
-"Whether or not the grades generated by peers are reliably similar to grades generated by experts is only one factor worth considering, however. Student perception is also an important factor. A recent study indicated that reliance on peer grading is one of the top drivers of high MOOC dropout rates. This problem may be addressed by reintroducing some expert grading where possible." \citep{joyner2016}
-\end{quotation}
+APR Severity of Illness Code Mean           &  1.956277 &  2.087089 &  1.700000 \\\midrule
+APR Severity of Illness Code Reduced Mean   &  1.955716 &  2.087114 &  1.333333 \\\midrule
+Mean Difference                             &  0.000561 & -0.000025 &  0.366667 \\\midrule
+APR Severity of Illness Code Median         &  2.000000 &  2.000000 &  1.000000 \\\midrule
+APR Severity of Illness Code Reduced Median &  2.000000 &  2.000000 &  1.000000 \\\midrule
+Median Difference                           &  0.000000 &  0.000000 &  0.000000 \\\midrule
+APR Severity of Illness Code Mode           &  2.000000 &  2.000000 &  1.000000 \\\midrule
+APR Severity of Illness Code Reduced Mode   &  2.000000 &  2.000000 &  1.000000 \\\midrule
+Mode Difference                             &  0.000000 &  0.000000 &  0.000000 \\
+\end{tabular}
+\end{jdftable}
+\subsection{Length of Stay and Gender}
+There are small difference in Mean between original data and reduced data. But no difference between median. Mode is only has small difference in U.  
+\begin{jdftable}
+\captionof{table}{Length of stay and Gender}\label{table:Example}
+\small % Reduce font size
+\begin{tabular}{@{} llll}
+\textbf{Gender} & \textbf{F} &\textbf{M} & \textbf{U}\\
+	\toprule[0.5pt]
 
-\subsubsection{Lists}
-Bulleted and numbered lists are indented 0.5" from the left margin, with the bullet or number hanging in the margin by 0.25" (the default format).
+Mean           &  5.047232 &  5.917153 &       6.65 \\
+\midrule
+Reduced Mean   &  5.027059 &  5.937571 &  10.666667 \\
+\midrule
+Mean Difference                   &  0.020173 & -0.020418 &  -4.016667 \\
+\midrule
+Median         &       3.0 &       3.0 &        2.0 \\
+\midrule
+Reduced Median &       3.0 &       3.0 &        2.0 \\
+\midrule
+Median Difference                 &       0.0 &       0.0 &        0.0 \\
+\midrule
+Mode           &         2 &         2 &     [1, 2] \\
+\midrule
+Reduced Mode   &         2 &         2 &          1 \\
+\midrule
+Mode Difference                   &         0 &         0 &     [0, 1] \\
+\end{tabular}
+\end{jdftable}
 
-Bullet points:
 
-\begin{itemize}
-	\item First bullet point item
-	\item Second bullet point item
-\end{itemize}
 
-Numbered list:
+\subsection{APR Severity of Illness Code and Gender}
+There are small difference in Mean between original data and reduced data. But no difference between median and mode.  
+\begin{jdftable}
+\captionof{table}{APR Severity of Illness Code and Gender}\label{table:Example}
+\small % Reduce font size
+\begin{tabular}{@{} llll}
+\textbf{Gender} & \textbf{F} &\textbf{M} & \textbf{U}\\
+	\toprule[0.5pt]
 
-\begin{enumerate}
-	\item First numbered item
-	\item Second numbered item
-\end{enumerate}
+APR Severity of Illness Code Mean           &  1.956277 &  2.087089 &  1.700000 \\\midrule
+APR Severity of Illness Code Reduced Mean   &  1.955716 &  2.087114 &  1.333333 \\\midrule
+Mean Difference                             &  0.000561 & -0.000025 &  0.366667 \\\midrule
+APR Severity of Illness Code Median         &  2.000000 &  2.000000 &  1.000000 \\\midrule
+APR Severity of Illness Code Reduced Median &  2.000000 &  2.000000 &  1.000000 \\\midrule
+Median Difference                           &  0.000000 &  0.000000 &  0.000000 \\\midrule
+APR Severity of Illness Code Mode           &  2.000000 &  2.000000 &  1.000000 \\\midrule
+APR Severity of Illness Code Reduced Mode   &  2.000000 &  2.000000 &  1.000000 \\\midrule
+Mode Difference                             &  0.000000 &  0.000000 &  0.000000 \\
+\end{tabular}
+\end{jdftable}
 
-\section{Procedural elements}
-\subsection{In-line citations}
-Articles or sources to which you refer should be cited in-line with the authors’ names and the year of publication.\footnote{In-line citations are preferred over footnotes, and we favor APA citation format for both in-line citations and reference lists. Refer to the \href{https://owl.purdue.edu/owl/research_and_citation/apa_style/apa_formatting_and_style_guide/in_text_citations_the_basics.html}{Purdue Online Writing Lab}, or follow the above examples. Footnotes should use 8.5 point text with 1.26 line spacing.} The citation should be placed close in the text to the actual claim, not merely at the end of the paragraph. For example: students in the OMSCS program are older and more likely to be employed than students in the on-campus program \citep{joyner2017}. In the event of multiple authors, list them. For example: research finds sentiment analysis of the text of OMSCS reviews corresponds to student-assigned ratings of the course \citep{newman2018}. You may also cite multiple studies together. For example: several studies have found students in the online version of an undergraduate CS1 class performed equally with students in a traditional version (\cite{joyner2018a}; \cite{joyner2018b}). If you would like to refer to an author in text, you may also do so by including the year (in parentheses) after the author’s name in the text. If a publication has more than 4 authors, you may list the first author followed by ‘et al.’ For example: \citeinl{joyner2016} claim that a round of peer review prior to grading may improve graders’ efficiency and the quality of feedback given. This applies to parenthetical citations as well, e.g. \citep{joyner2016}.
 
-\subsection{Reference lists}
-References should be placed at the end of the paper in a dedicated section. Reference lists should be numbered and organized alphabetically by first author’s last name. If multiple papers have the same author(s) and year, you may append a letter to the end of the year to allow differentiated in-line text (e.g. Joyner, 2018a and Joyner, 2018b in the section above). If multiple papers have the same author(s), list them in chronological order starting with the older paper. Only works that are cited in-line should be included in the reference list. The reference list does not count against the length requirements.
 
-\section{References}
-\printbibliography[heading=none]
 
-\section{Appendices}
-You may optionally move certain information to appendices at the end of your paper, after the reference list. If you have multiple appendices, you should create a section with a \emph{Heading 1} of "Appendices." Each appendix should begin with a descriptive \emph{Heading 2}; appendices can thus be referenced in the body text using their heading number and description, e.g. "Appendix 5.1: Survey responses." If you have only one appendix, you can label it with the word "Appendix" followed by a descriptive title, e.g., "Appendix: Survey responses."
 
-These appendices do not count against the page limit, but they should not contain any information required to answer the question in full. The body text should be sufficient to answer the question, and the appendices should be included only for you to reference or to give additional context. If you decide to move content to an appendix, be sure to summarize the content and note it in relevant place in the body text, e.g., "The raw data can be viewed in \emph{Appendix 5.1: Survey responses}."
 
+
+
+
+\subsection{Length of Stay and Race}
+There are small difference in Mean between original data and reduced data. But no difference between median. Mode is only has small difference in U.  
+\begin{jdftable}
+\captionof{table}{Length of stay and Race}\label{table:Example}
+\small % Reduce font size
+\begin{tabular}{@{} lrrrr}
+\textbf{Race} & \textbf{Black/African American} &\textbf{Multi-racial} & \textbf{Other Race} &\textbf{White}\\
+	\toprule[0.5pt]
+Length of Stay int Mean           &                6.141728 &      5.476597 &    5.236055 &  5.291151 \\\midrule
+Length of Stay int Reduced Mean   &                6.160951 &      5.492871 &    5.229004 &  5.283484 \\\midrule
+Mean Difference                   &               -0.019223 &     -0.016274 &    0.007051 &  0.007667 \\\midrule
+Length of Stay int Median         &                3.000000 &      3.000000 &    3.000000 &  3.000000 \\\midrule
+Length of Stay int Reduced Median &                3.000000 &      3.000000 &    3.000000 &  3.000000 \\\midrule
+Median Difference                 &                0.000000 &      0.000000 &    0.000000 &  0.000000 \\\midrule
+Length of Stay int Mode           &                2.000000 &      2.000000 &    2.000000 &  2.000000 \\\midrule
+Length of Stay int Reduced Mode   &                2.000000 &      2.000000 &    2.000000 &  2.000000 \\\midrule
+Mode Difference                   &                0.000000 &      0.000000 &    0.000000 &  0.000000 \\
+\end{tabular}
+\end{jdftable}
+
+
+
+
+
+
+
+
+
+
+\subsection{APR Severity of Illness Code and Race}
+There are small difference in Mean between original data and reduced data. But no difference between median and mode.  
+\begin{jdftable}
+\captionof{table}{Length of stay and Race}\label{table:Example}
+\small % Reduce font size
+\begin{tabular}{@{} lrrrr}
+\textbf{Race} & \textbf{Black/African American} &\textbf{Multi-racial} & \textbf{Other Race} &\textbf{White}\\
+	\toprule[0.5pt]
+APR Severity of Illness Code Mean           &                2.061129 &      2.083701 &    1.909175 &  2.045908 \\\midrule
+APR Severity of Illness Code Reduced Mean   &                2.062400 &      2.085149 &    1.906669 &  2.046156 \\\midrule
+Mean Difference                             &               -0.001271 &     -0.001447 &    0.002506 & -0.000248 \\\midrule
+APR Severity of Illness Code Median         &                2.000000 &      2.000000 &    2.000000 &  2.000000 \\\midrule
+APR Severity of Illness Code Reduced Median &                2.000000 &      2.000000 &    2.000000 &  2.000000 \\\midrule
+Median Difference                           &                0.000000 &      0.000000 &    0.000000 &  0.000000 \\\midrule
+APR Severity of Illness Code Mode           &                2.000000 &      2.000000 &    1.000000 &  2.000000 \\\midrule
+APR Severity of Illness Code Reduced Mode   &                2.000000 &      2.000000 &    1.000000 &  2.000000 \\\midrule
+Mode Difference                             &                0.000000 &      0.000000 &    0.000000 &  0.000000 \\
+\end{tabular}
+\end{jdftable}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\subsection{Length of Stay and Ethnicity}
+There are small difference in Mean between original data and reduced data. But no difference between median and mode.  
+\begin{jdftable}
+\captionof{table}{Length of stay and Ethnicity}\label{table:Example}
+\small % Reduce font size
+\begin{tabular}{@{} lrrrr}
+\textbf{Ethnicity} & \textbf{Multi-ethnic} &\textbf{Not Span/Hispanic} & \textbf{Spanish/Hispanic} &\textbf{Unknown}\\
+	\toprule[0.5pt]
+Length of Stay int Mean           &      5.257697 &           5.495060 &          4.953935 &  5.627488 \\ \midrule
+Length of Stay int Reduced Mean   &      5.557858 &           5.497888 &          4.924129 &  5.594485 \\\midrule
+Mean Difference                   &     -0.300160 &          -0.002828 &          0.029806 &  0.033004 \\\midrule
+Length of Stay int Median         &      3.000000 &           3.000000 &          3.000000 &  3.000000 \\\midrule
+Length of Stay int Reduced Median &      3.000000 &           3.000000 &          3.000000 &  3.000000 \\\midrule
+Median Difference                 &      0.000000 &           0.000000 &          0.000000 &  0.000000 \\\midrule
+Length of Stay int Mode           &      2.000000 &           2.000000 &          2.000000 &  2.000000 \\\midrule
+Length of Stay int Reduced Mode   &      2.000000 &           2.000000 &          2.000000 &  2.000000 \\\midrule
+Mode Difference                   &      0.000000 &           0.000000 &          0.000000 &  0.000000 \\
+\end{tabular}
+\end{jdftable}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\subsection{APR Severity of Illness Code and Ethnicity}
+There are small difference in Mean between original data and reduced data. But no difference between median and mode.  
+\begin{jdftable}
+\captionof{table}{APR Severity of Illness Code and Ethnicity}\label{table:Example}
+\small % Reduce font size
+\begin{tabular}{@{} lrrrr}
+\textbf{Ethnicity} & \textbf{Multi-ethnic} &\textbf{Not Span/Hispanic} & \textbf{Spanish/Hispanic} &\textbf{Unknown}\\
+	\toprule[0.5pt]
+APR Severity of Illness Code Mean           &      1.987840 &           2.041043 &          1.893655 &  1.915304 \\ \midrule
+APR Severity of Illness Code Reduced Mean   &      2.006064 &           2.041392 &          1.887484 &  1.916506 \\\midrule
+Mean Difference                             &     -0.018224 &          -0.000349 &          0.006171 & -0.001203 \\\midrule
+APR Severity of Illness Code Median         &      2.000000 &           2.000000 &          2.000000 &  2.000000 \\\midrule
+APR Severity of Illness Code Reduced Median &      2.000000 &           2.000000 &          2.000000 &  2.000000 \\\midrule
+Median Difference                           &      0.000000 &           0.000000 &          0.000000 &  0.000000 \\\midrule
+APR Severity of Illness Code Mode           &      1.000000 &           2.000000 &          2.000000 &  1.000000 \\\midrule
+APR Severity of Illness Code Reduced Mode   &      1.000000 &           2.000000 &          2.000000 &  1.000000 \\\midrule
+Mode Difference                             &      0.000000 &           0.000000 &          0.000000 &  0.000000 \\
+\end{tabular}
+\end{jdftable}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{Reduced data For APR Severity of Illness Code with Age Group}
+\begin{jdftable}
+\captionof{table}{Frequesncy of APR Severity of Illness Code associated with Age}\label{table:Example}
+\small % Reduce font size
+\begin{tabular}{@{} l c c c c c}
+\textbf{Independent Variable} & \textbf{Dependent Variable-Illness Code} & & & & \\
+	\toprule[0.5pt]
+	Age Group & 0 & 1 & 2 & 3 & 4\\
+
+0 to 17     &  42 &  49963 &  18446 &   7127 &   1526 \\	\midrule
+18 to 29    &   2 &  24378 &  21277 &   5079 &    926 \\	\midrule
+30 to 49    &   3 &  40780 &  42227 &  14268 &   2632 \\	\midrule
+50 to 69    &   0 &  35725 &  62650 &  39446 &   9673 \\	\midrule
+70 or Older &   0 &  20341 &  58865 &  54547 &  14365 \\
+\end{tabular}
+\end{jdftable}
+
+\begin{jdffigure}
+\includegraphics[height=13cm]{Figures/code-age_reduced.jpg} \\
+\captionof{figure}{APR Severity of Illness Code associated with Age}\label{fig:code-age}%
+\end{jdffigure}
+\subsection{Difference between Original and Reduced Data}
+When using 50\% of the data to create a reduced dataset, the number of data is only half of the original one. The frequency is in half in rough. Since the sampling the random, it is not exactly half. The histogram will show fewer data points and looks a little different compared to the histogram of the original dataset.
+\subsection{Random Sampling influence}
+Random sampling is a method where data points are selected randomly and uniformly from the original dataset, without considering any specific characteristic or attribute of the data points.
+In this particular example, the data set is small and random sampling cut the origianla dataset in half. I believe the members from the age group are underrepresented in the original dataset, they may not be included in the reduced dataset and their frequency may be lower. In this case, the members from that age group may be harmed by the random sampling method.
 \end{document}
